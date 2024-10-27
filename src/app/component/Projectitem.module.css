@@ -7,23 +7,23 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* shadow-xl */
-  border-radius: 0.5rem; /* rounded-xl */
-  overflow: hidden; /* For the rounded corners effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
   transition: background 0.3s ease; /* Smooth transition for hover */
 }
 
 .container:hover {
-  background: linear-gradient(to right, #5651e5, #709dff); /* hover:bg-gradient-to-r */
+  background: linear-gradient(to right, #5651e5, #709dff); 
 }
 
 .image {
-  border-radius: 0.5rem; /* rounded-xl */
-  transition: opacity 0.3s ease; /* Smooth transition for hover */
+  border-radius: 0.5rem; 
+  transition: opacity 0.3s ease;
 }
 
 .container:hover .image {
-  opacity: 0.1; /* group-hover:opacity-10 */
+  opacity: 0.1; 
 }
 
 .info {
@@ -32,52 +32,52 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  display: none; /* hidden by default */
+  display: none;
 }
 
 .container:hover .info {
-  display: block; /* Show info on hover */
+  display: block;
 }
 
 .title {
-  font-size: 1.5rem; /* text-2xl */
-  color: white; /* text-white */
-  letter-spacing: 0.05em; /* tracking-wider */
+  font-size: 1.5rem;
+  color: white; 
+  letter-spacing: 0.05em; 
 }
 
 .tech {
-  padding-bottom: 1rem; /* pb-4 */
-  padding-top: 0.5rem; /* pt-2 */
-  color: white; /* text-white */
+  padding-bottom: 1rem; 
+  padding-top: 0.5rem; 
+  color: white; 
 }
 
 .moreInfo {
   text-align: center;
-  padding: 0.75rem; /* py-3 */
-  border-radius: 0.5rem; /* rounded-lg */
-  background-color: white; /* bg-white */
-  color: #4A5568; /* text-gray-700 */
-  font-weight: bold; /* font-bold */
-  font-size: 1.125rem; /* text-lg */
+  padding: 0.75rem; 
+  border-radius: 0.5rem; 
+  background-color: white;
+  color: #4A5568; 
+  font-weight: bold; 
+  font-size: 1.125rem; 
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .moreInfo:hover {
-  background-color: #e2e8f0; /* Hover color for the button */
+  background-color: #e2e8f0; 
 }
 
-/* Responsive Styles */
+/* Responsive  */
 @media (max-width: 768px) {
   .title {
-    font-size: 1.25rem; /* Adjust title size for smaller screens */
+    font-size: 1.25rem; 
   }
   
   .tech {
-    font-size: 0.875rem; /* Adjust tech size for smaller screens */
+    font-size: 0.875rem; 
   }
   
   .moreInfo {
-    font-size: 1rem; /* Adjust button size for smaller screens */
+    font-size: 1rem;
   }
 }
