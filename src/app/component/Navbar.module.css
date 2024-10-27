@@ -1,0 +1,200 @@
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarShadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* Desktop Navigation Links */
+.navLinks {
+  display: flex;
+  list-style-type: none;
+}
+
+/* .navLink {
+  margin-left: 2.5rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  position: relative;
+  color: blue;
+}
+
+.navLink:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #226dd6;
+  bottom: -5px;
+  left: 0;
+} */
+
+/* Desktop Navigation Links */
+.navLinks {
+  display: flex;
+  list-style-type: none;
+}
+
+.navLink {
+  margin-left: 2.5rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  position: relative;
+  color: blue; /* Set link color to blue */
+}
+
+.navLink:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #226dd6;
+  bottom: -5px;
+  left: 0;
+}
+
+/* Mobile-specific link styling */
+.drawerNavLinks {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 1rem 0;
+  margin-left: 6px;
+  color: blue; /* Set drawer links to blue */
+}
+
+.drawerNavLink {
+  padding: 1rem 0;
+  cursor: pointer;
+  color: blue; /* Ensure all drawer links are blue */
+}
+
+.drawerNavLink:hover {
+  color: #226dd6; /* Slightly darker shade of blue for hover */
+}
+
+
+/* Mobile-specific Styling */
+.hamburgerIcon {
+  display: none; /* Hidden on large screens */
+}
+
+/* Overlay and Side Drawer Styling */
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in;
+}
+
+.sideDrawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ecf0f3;
+  z-index: 10;
+  /* Add this for slide-in effect */
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sideDrawerClose {
+  transform: translateX(100%);
+}
+
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeIcon {
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.drawerNavLinks {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 1rem 0;
+  margin-left: 6px;
+}
+
+.drawerNavLink {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.connectText {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #5651e5;
+  margin-top: 4rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.iconWrapper {
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.iconWrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Media Query */
+@media (max-width: 767px) {
+  .hamburgerIcon {
+    display: block; /* Show hamburger icon only on mobile */
+  }
+
+  .navLinks {
+    display: none; /* Hide desktop navigation links on mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  .sideDrawer,
+  .overlay {
+    display: none; /* Hide side drawer and overlay on larger screens */
+  }
+}
+

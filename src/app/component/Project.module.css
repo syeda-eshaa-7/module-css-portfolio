@@ -1,0 +1,61 @@
+.projectsContainer {
+    width: 100%;
+  }
+  
+  .innerContainer {
+    max-width: 1240px;
+    margin: auto;
+    padding: 2rem 1rem; /* Adjusted for spacing */
+  }
+  
+  .title {
+    font-size: 1.25rem; /* Corresponds to text-xl */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #5651e5;
+  }
+  
+  .heading {
+    padding: 1rem 0; /* Equivalent to py-4 */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column by default */
+    gap: 2rem; /* Corresponds to gap-8 */
+  }
+  /* Projects.module.css */
+.projectsContainer {
+  width: 100%;
+}
+
+.innerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 1rem; /* Padding equivalent to px-2 py-16 */
+}
+
+
+
+.sectionHeader {
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* responsive grid */
+  gap: 2rem; /* gap-8 */
+}
+
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens and up */
+    }
+  }
+
+  
+  
