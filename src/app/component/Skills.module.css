@@ -1,6 +1,6 @@
 .skillsSection {
     width: 100%;
-    padding: 2rem 1rem; /* Added padding for smaller screens */
+    padding: 2rem 1rem;
   }
   
   .container {
@@ -13,14 +13,14 @@
   }
   
   .sectionTitle {
-    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-size: 1.25rem; 
     text-transform: uppercase;
-    letter-spacing: 0.05em; /* Tracking wide */
-    color: #5651e5; /* Custom color */
+    letter-spacing: 0.05em; 
+    color: #5651e5; 
   }
   
   .heading {
-    padding: 1rem 0; /* Equivalent to py-4 */
+    padding: 1rem 0; 
   }
   
   .gridContainer {
@@ -31,9 +31,9 @@
   
   .skillItem {
     padding: 1.5rem; /* Equivalent to p-6 */
-    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4); /* Shadow */
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4); 
     border-radius: 0.5rem; /* Rounded */
-    transition: transform 0.3s ease-in; /* Ease-in duration */
+    transition: transform 0.3s ease-in; 
   }
   
   .skillItem:hover {
@@ -70,21 +70,21 @@
   /* Responsive styles */
   @media (min-width: 768px) {
     .gridContainer {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   
   @media (max-width: 640px) {
     .sectionTitle {
-      font-size: 1.125rem; /* Smaller title for small screens */
+      font-size: 1.125rem;
     }
   
     .heading {
-      font-size: 1.5rem; /* Adjust heading size */
+      font-size: 1.5rem;
     }
   
     .skillItem {
-      padding: 1rem; /* Less padding on small screens */
+      padding: 1rem;
     }
   }
    
